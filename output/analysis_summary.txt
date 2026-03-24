@@ -1,0 +1,134 @@
+Crime Data Analysis Summary
+============================================================
+
+Input File: Crime_Data.csv
+Output Directory: output
+Year Range: 2020 to 2023
+Total Records Analyzed: 2958
+Objectives Run: 01, 02, 03, 04, 05, 06, 07, 08
+
+
+Objective 01 Results:
+----------------------------------------
+objective: 01
+description: Top 10 Crime Categories
+total_crime_types: 83
+top_10_crimes:
+  VEHICLE - STOLEN: 369
+  BATTERY - SIMPLE ASSAULT: 253
+  BURGLARY FROM VEHICLE: 206
+  VANDALISM - FELONY ($400 & OVER, ALL CHURCH VANDALISMS): 202
+  ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT: 168
+  INTIMATE PARTNER - SIMPLE ASSAULT: 164
+  BURGLARY: 161
+  THEFT PLAIN - PETTY ($950 & UNDER): 146
+  THEFT FROM MOTOR VEHICLE - PETTY ($950 & UNDER): 131
+  ROBBERY: 108
+plots_generated: ['objective_01_top_crimes.png']
+statistics_file: objective_01_statistics.csv
+
+Objective 02 Results:
+----------------------------------------
+objective: 02
+description: Time-Series Analysis of Crime Trends by Month
+peak_month: 1.0
+lowest_month: 12.0
+monthly_crime_counts:
+  1.0: 331
+  2.0: 262
+  3.0: 259
+  4.0: 250
+  5.0: 284
+  6.0: 256
+  7.0: 261
+  8.0: 252
+  9.0: 197
+  10.0: 195
+  11.0: 218
+  12.0: 193
+plots_generated: ['objective_02_monthly_trends.png']
+statistics_file: objective_02_statistics.csv
+
+Objective 03 Results:
+----------------------------------------
+objective: 03
+description: Crime Hotspot Detection Using Grid-Based Heatmap
+grid_size: 3x3 grid
+max_crime_density: 665
+hotspot_grid_position: (1, 2)
+plots_generated: ['objective_03_hotspots.png']
+statistics_file: objective_03_statistics.csv
+
+Objective 04 Results:
+----------------------------------------
+objective: 04
+description: Victim Age Distribution by Crime Type and Gender
+top_5_crime_types:
+  BATTERY - SIMPLE ASSAULT: 249
+  BURGLARY FROM VEHICLE: 200
+  INTIMATE PARTNER - SIMPLE ASSAULT: 163
+  ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT: 162
+  VANDALISM - FELONY ($400 & OVER, ALL CHURCH VANDALISMS): 143
+total_valid_victims: 2183
+overall_avg_victim_age: 39.75
+plots_generated: ['objective_04_victim_age.png']
+statistics_file: objective_04_statistics.csv
+
+Objective 05 Results:
+----------------------------------------
+objective: 05
+description: Top 5 Weapons Used in Crimes
+total_weapon_types: 51
+top_5_weapons:
+  STRONG-ARM (HANDS, FIST, FEET OR BODILY FORCE): 590
+  UNKNOWN WEAPON/OTHER WEAPON: 126
+  HAND GUN: 75
+  VERBAL THREAT: 71
+  KNIFE WITH BLADE 6INCHES OR LESS: 31
+plots_generated: ['objective_05_weapons.png']
+statistics_file: objective_05_statistics.csv
+
+Objective 06 Results:
+----------------------------------------
+objective: 06
+description: Victim Age Distribution (Histogram)
+total_valid_age_records: 2183
+average_victim_age: 39.75
+median_victim_age: 37.0
+age_group_distribution:
+  0-17: 98
+  18-29: 634
+  30-44: 704
+  45-59: 494
+  60+: 253
+plots_generated: ['objective_06_age_histogram.png']
+statistics_file: objective_06_statistics.csv
+
+Objective 07 Results:
+----------------------------------------
+objective: 07
+description: Crime Distribution by Status Description
+total_status_types: 5
+status_distribution:
+  Invest Cont: 2278
+  Adult Other: 399
+  Adult Arrest: 268
+  Juv Arrest: 12
+  Juv Other: 1
+plots_generated: ['objective_07_status.png']
+statistics_file: objective_07_statistics.csv
+
+Objective 08 Results:
+----------------------------------------
+objective: 08
+description: Monthly Crime Trends by Area in 2020
+total_crimes_2020: 2958
+number_of_areas: 13
+top_areas_2020:
+  77th Street: 317
+  Central: 292
+  Southwest: 282
+  Rampart: 248
+  Hollywood: 241
+plots_generated: ['objective_08_area_trends.png']
+statistics_file: objective_08_statistics.csv
