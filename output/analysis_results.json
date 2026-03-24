@@ -1,0 +1,119 @@
+{
+  "1": {
+    "data": {
+      "top_10_crimes": {
+        "Stolen Vehicle": 593,
+        "Battery Assault": 428,
+        "Burglary (Vehicle)": 352,
+        "Felony Vandalism": 343,
+        "Aggr. Assault w/ Weapon": 284,
+        "IP Assault": 271,
+        "Burglary": 263,
+        "Petty Theft": 252,
+        "Theft from Vehicle": 225,
+        "VANDALISM - MISDEAMEANOR ($399 OR UNDER)": 177
+      },
+      "total_crimes_analyzed": 5000
+    },
+    "figure_path": "output\\objective_01_top_10_crimes.png"
+  },
+  "2": {
+    "data": {
+      "monthly_crime_counts": {
+        "1.0": 157,
+        "2.0": 214,
+        "3.0": 199,
+        "4.0": 178,
+        "5.0": 158,
+        "6.0": 181,
+        "7.0": 165,
+        "8.0": 167,
+        "9.0": 150,
+        "10.0": 161,
+        "11.0": 147,
+        "12.0": 151
+      },
+      "peak_month": 2,
+      "lowest_month": 11
+    },
+    "figure_path": "output\\objective_02_monthly_trends.png"
+  },
+  "3": {
+    "error": "int() argument must be a string, a bytes-like object or a number, not 'tuple'"
+  },
+  "4": {
+    "data": {
+      "top_5_crimes": [
+        "BATTERY - SIMPLE ASSAULT",
+        "BURGLARY FROM VEHICLE",
+        "ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT",
+        "INTIMATE PARTNER - SIMPLE ASSAULT",
+        "VANDALISM - FELONY ($400 & OVER, ALL CHURCH VANDALISMS)"
+      ],
+      "avg_victim_age": 39.322138635142394,
+      "median_victim_age": 37.0
+    },
+    "figure_path": "output\\objective_04_age_distribution.png"
+  },
+  "5": {
+    "data": {
+      "top_5_weapons": {
+        "Unknown": 3115,
+        "STRONG-ARM (HANDS, FIST, FEET OR BODILY FORCE)": 1010,
+        "UNKNOWN WEAPON/OTHER WEAPON": 212,
+        "VERBAL THREAT": 122,
+        "HAND GUN": 119
+      },
+      "total_weapon_incidents": 4578
+    },
+    "figure_path": "output\\objective_05_weapons.png"
+  },
+  "6": {
+    "data": {
+      "total_valid_victims": 3722,
+      "age_statistics": {
+        "mean": 39.322138635142394,
+        "median": 37.0,
+        "std": 15.69095477500547,
+        "min": 2,
+        "max": 99
+      }
+    },
+    "figure_path": "output\\objective_06_age_histogram.png"
+  },
+  "7": {
+    "data": {
+      "status_distribution": {
+        "Invest Cont": 3789,
+        "Adult Other": 690,
+        "Adult Arrest": 501,
+        "Juv Arrest": 18,
+        "Juv Other": 2
+      },
+      "total_crimes": 5000
+    },
+    "figure_path": "output\\objective_07_status_distribution.png"
+  },
+  "8": {
+    "data": {
+      "year": 2020,
+      "areas": [
+        "77th Street",
+        "Central",
+        "Harbor",
+        "Hollenbeck",
+        "Hollywood",
+        "Newton",
+        "Northeast",
+        "Rampart",
+        "Southwest",
+        "Van Nuys",
+        "West LA",
+        "West Valley",
+        "Wilshire"
+      ],
+      "total_crimes_2020": 2028
+    },
+    "figure_path": "output\\objective_08_monthly_by_area.png"
+  }
+}
