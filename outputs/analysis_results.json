@@ -1,0 +1,443 @@
+{
+  "timestamp": "2026-03-24T11:47:50.650048",
+  "objectives_run": [
+    "trends",
+    "types",
+    "temporal",
+    "geographic",
+    "arrests",
+    "victim_age",
+    "status",
+    "area_trends"
+  ],
+  "results": {
+    "trends": {
+      "title": "犯罪趋势分析",
+      "tables": {
+        "yearly_trend": [
+          {
+            "year": 2020,
+            "count": 2026,
+            "growth_rate": NaN
+          }
+        ]
+      },
+      "figures": [
+        "outputs\\yearly_crime_trend.png"
+      ],
+      "statistics": {
+        "total_years": 1,
+        "max_year": 2020,
+        "min_year": 2020,
+        "max_count": 2026,
+        "min_count": 2026
+      }
+    },
+    "types": {
+      "error": "keyword labelweight is not recognized; valid keywords are ['size', 'width', 'color', 'tickdir', 'pad', 'labelsize', 'labelcolor', 'labelfontfamily', 'zorder', 'gridOn', 'tick1On', 'tick2On', 'label1On', 'label2On', 'length', 'direction', 'left', 'bottom', 'right', 'top', 'labelleft', 'labelbottom', 'labelright', 'labeltop', 'labelrotation', 'grid_agg_filter', 'grid_alpha', 'grid_animated', 'grid_antialiased', 'grid_clip_box', 'grid_clip_on', 'grid_clip_path', 'grid_color', 'grid_dash_capstyle', 'grid_dash_joinstyle', 'grid_dashes', 'grid_data', 'grid_drawstyle', 'grid_figure', 'grid_fillstyle', 'grid_gapcolor', 'grid_gid', 'grid_in_layout', 'grid_label', 'grid_linestyle', 'grid_linewidth', 'grid_marker', 'grid_markeredgecolor', 'grid_markeredgewidth', 'grid_markerfacecolor', 'grid_markerfacecoloralt', 'grid_markersize', 'grid_markevery', 'grid_mouseover', 'grid_path_effects', 'grid_picker', 'grid_pickradius', 'grid_rasterized', 'grid_sketch_params', 'grid_snap', 'grid_solid_capstyle', 'grid_solid_joinstyle', 'grid_transform', 'grid_url', 'grid_visible', 'grid_xdata', 'grid_ydata', 'grid_zorder', 'grid_aa', 'grid_c', 'grid_ds', 'grid_ls', 'grid_lw', 'grid_mec', 'grid_mew', 'grid_mfc', 'grid_mfcalt', 'grid_ms']"
+    },
+    "temporal": {
+      "title": "月度犯罪趋势分析",
+      "tables": {
+        "monthly_trends": [
+          {
+            "month": 1,
+            "count": 157,
+            "percentage": 7.75,
+            "month_name": "Jan"
+          },
+          {
+            "month": 2,
+            "count": 214,
+            "percentage": 10.56,
+            "month_name": "Feb"
+          },
+          {
+            "month": 3,
+            "count": 199,
+            "percentage": 9.82,
+            "month_name": "Mar"
+          },
+          {
+            "month": 4,
+            "count": 177,
+            "percentage": 8.74,
+            "month_name": "Apr"
+          },
+          {
+            "month": 5,
+            "count": 158,
+            "percentage": 7.8,
+            "month_name": "May"
+          },
+          {
+            "month": 6,
+            "count": 181,
+            "percentage": 8.93,
+            "month_name": "Jun"
+          },
+          {
+            "month": 7,
+            "count": 165,
+            "percentage": 8.14,
+            "month_name": "Jul"
+          },
+          {
+            "month": 8,
+            "count": 167,
+            "percentage": 8.24,
+            "month_name": "Aug"
+          },
+          {
+            "month": 9,
+            "count": 150,
+            "percentage": 7.4,
+            "month_name": "Sep"
+          },
+          {
+            "month": 10,
+            "count": 161,
+            "percentage": 7.95,
+            "month_name": "Oct"
+          },
+          {
+            "month": 11,
+            "count": 147,
+            "percentage": 7.26,
+            "month_name": "Nov"
+          },
+          {
+            "month": 12,
+            "count": 150,
+            "percentage": 7.4,
+            "month_name": "Dec"
+          }
+        ]
+      },
+      "figures": [
+        "outputs\\monthly_crime_trends.png"
+      ],
+      "statistics": {
+        "peak_month": "Feb",
+        "lowest_month": "Nov",
+        "peak_count": 214,
+        "lowest_count": 147
+      }
+    },
+    "geographic": {
+      "title": "犯罪热点检测（网格热力图）",
+      "tables": {
+        "heatmap_grid_data": [
+          {
+            "Lon_0": 0.0,
+            "Lon_1": 0.0,
+            "Lon_2": 125.0,
+            "Lon_3": 23.0
+          },
+          {
+            "Lon_0": 0.0,
+            "Lon_1": 0.0,
+            "Lon_2": 60.0,
+            "Lon_3": 4.0
+          },
+          {
+            "Lon_0": 36.0,
+            "Lon_1": 161.0,
+            "Lon_2": 715.0,
+            "Lon_3": 369.0
+          },
+          {
+            "Lon_0": 166.0,
+            "Lon_1": 150.0,
+            "Lon_2": 147.0,
+            "Lon_3": 70.0
+          }
+        ]
+      },
+      "figures": [
+        "outputs\\crime_hotspot_heatmap.png"
+      ],
+      "statistics": {
+        "lat_range": "(33.7087, 34.2212)",
+        "lon_range": "(-118.5651, -118.1624)",
+        "center_point": "(34.04470098716683, -118.32702946692991)",
+        "total_records": 2026,
+        "max_density": 715,
+        "hotspot_grids": 2
+      }
+    },
+    "arrests": {
+      "title": "受害者年龄分布分析（按犯罪类型和性别）",
+      "tables": {
+        "stats_by_crime_gender": [
+          {
+            "crime_type": "ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT",
+            "victim_sex": "F",
+            "count": 35,
+            "mean_age": 36.34285714285714,
+            "median_age": 32.0,
+            "std_age": 17.5531844892682
+          },
+          {
+            "crime_type": "ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT",
+            "victim_sex": "M",
+            "count": 78,
+            "mean_age": 35.93589743589744,
+            "median_age": 36.0,
+            "std_age": 14.582804091057904
+          },
+          {
+            "crime_type": "BATTERY - SIMPLE ASSAULT",
+            "victim_sex": "F",
+            "count": 72,
+            "mean_age": 40.236111111111114,
+            "median_age": 38.5,
+            "std_age": 16.813385894189096
+          },
+          {
+            "crime_type": "BATTERY - SIMPLE ASSAULT",
+            "victim_sex": "M",
+            "count": 98,
+            "mean_age": 43.51020408163265,
+            "median_age": 42.5,
+            "std_age": 16.977999650219978
+          },
+          {
+            "crime_type": "BURGLARY FROM VEHICLE",
+            "victim_sex": "F",
+            "count": 54,
+            "mean_age": 36.074074074074076,
+            "median_age": 33.5,
+            "std_age": 10.848618470173546
+          },
+          {
+            "crime_type": "BURGLARY FROM VEHICLE",
+            "victim_sex": "M",
+            "count": 85,
+            "mean_age": 38.37647058823529,
+            "median_age": 36.0,
+            "std_age": 11.89835569931152
+          },
+          {
+            "crime_type": "BURGLARY FROM VEHICLE",
+            "victim_sex": "X",
+            "count": 1,
+            "mean_age": 19.0,
+            "median_age": 19.0,
+            "std_age": NaN
+          },
+          {
+            "crime_type": "INTIMATE PARTNER - SIMPLE ASSAULT",
+            "victim_sex": "F",
+            "count": 81,
+            "mean_age": 34.20987654320987,
+            "median_age": 30.0,
+            "std_age": 13.275650689686284
+          },
+          {
+            "crime_type": "INTIMATE PARTNER - SIMPLE ASSAULT",
+            "victim_sex": "M",
+            "count": 23,
+            "mean_age": 35.26086956521739,
+            "median_age": 34.0,
+            "std_age": 8.523856315202263
+          },
+          {
+            "crime_type": "THEFT PLAIN - PETTY ($950 & UNDER)",
+            "victim_sex": "F",
+            "count": 52,
+            "mean_age": 38.44230769230769,
+            "median_age": 36.5,
+            "std_age": 13.222698045018783
+          },
+          {
+            "crime_type": "THEFT PLAIN - PETTY ($950 & UNDER)",
+            "victim_sex": "M",
+            "count": 41,
+            "mean_age": 41.97560975609756,
+            "median_age": 40.0,
+            "std_age": 14.841643785103535
+          }
+        ],
+        "gender_distribution": [
+          {
+            "sex": "M",
+            "count": 325,
+            "percentage": 52.42
+          },
+          {
+            "sex": "F",
+            "count": 294,
+            "percentage": 47.42
+          },
+          {
+            "sex": "X",
+            "count": 1,
+            "percentage": 0.16
+          }
+        ],
+        "age_by_crime_type": [
+          {
+            "crime_type": "ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT",
+            "count": 113,
+            "mean_age": 36.06,
+            "median_age": 34.0,
+            "std_age": 15.48,
+            "min_age": 10,
+            "max_age": 94
+          },
+          {
+            "crime_type": "BATTERY - SIMPLE ASSAULT",
+            "count": 170,
+            "mean_age": 42.12,
+            "median_age": 40.0,
+            "std_age": 16.94,
+            "min_age": 14,
+            "max_age": 90
+          },
+          {
+            "crime_type": "BURGLARY FROM VEHICLE",
+            "count": 140,
+            "mean_age": 37.35,
+            "median_age": 34.5,
+            "std_age": 11.58,
+            "min_age": 19,
+            "max_age": 67
+          },
+          {
+            "crime_type": "INTIMATE PARTNER - SIMPLE ASSAULT",
+            "count": 104,
+            "mean_age": 34.44,
+            "median_age": 32.0,
+            "std_age": 12.35,
+            "min_age": 18,
+            "max_age": 81
+          },
+          {
+            "crime_type": "THEFT PLAIN - PETTY ($950 & UNDER)",
+            "count": 93,
+            "mean_age": 40.0,
+            "median_age": 37.0,
+            "std_age": 13.99,
+            "min_age": 16,
+            "max_age": 75
+          }
+        ]
+      },
+      "figures": [
+        "outputs\\victim_age_by_crime_gender.png"
+      ],
+      "statistics": {
+        "top5_crimes": [
+          "BATTERY - SIMPLE ASSAULT",
+          "BURGLARY FROM VEHICLE",
+          "ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT",
+          "INTIMATE PARTNER - SIMPLE ASSAULT",
+          "THEFT PLAIN - PETTY ($950 & UNDER)"
+        ],
+        "total_records_analyzed": 620
+      }
+    },
+    "victim_age": {
+      "title": "受害者年龄分布分析",
+      "tables": {
+        "age_group_distribution": [
+          {
+            "age_group": "0-18",
+            "count": 72,
+            "percentage": 4.71
+          },
+          {
+            "age_group": "19-25",
+            "count": 269,
+            "percentage": 17.6
+          },
+          {
+            "age_group": "26-35",
+            "count": 401,
+            "percentage": 26.24
+          },
+          {
+            "age_group": "36-45",
+            "count": 317,
+            "percentage": 20.75
+          },
+          {
+            "age_group": "46-55",
+            "count": 219,
+            "percentage": 14.33
+          },
+          {
+            "age_group": "56-65",
+            "count": 160,
+            "percentage": 10.47
+          },
+          {
+            "age_group": "65+",
+            "count": 90,
+            "percentage": 5.89
+          }
+        ]
+      },
+      "figures": [
+        "outputs\\victim_age_distribution.png"
+      ],
+      "statistics": {
+        "total_valid_records": 1528,
+        "mean_age": 38.67,
+        "median_age": 36.0,
+        "std_age": 15.54,
+        "min_age": 2,
+        "max_age": 94
+      }
+    },
+    "status": {
+      "title": "犯罪状态分布分析",
+      "tables": {
+        "status_distribution": [
+          {
+            "status": "Invest Cont",
+            "count": 1495,
+            "percentage": 73.79
+          },
+          {
+            "status": "Adult Other",
+            "count": 291,
+            "percentage": 14.36
+          },
+          {
+            "status": "Adult Arrest",
+            "count": 233,
+            "percentage": 11.5
+          },
+          {
+            "status": "Juv Arrest",
+            "count": 6,
+            "percentage": 0.3
+          },
+          {
+            "status": "Juv Other",
+            "count": 1,
+            "percentage": 0.05
+          }
+        ]
+      },
+      "figures": [
+        "outputs\\crime_status_distribution.png"
+      ],
+      "statistics": {
+        "total_status_types": 5,
+        "most_common_status": "Invest Cont",
+        "most_common_count": 1495,
+        "most_common_percentage": 73.79
+      }
+    },
+    "area_trends": {
+      "title": "2020年各区域月度犯罪趋势分析",
+      "tables": {},
+      "figures": [],
+      "statistics": {},
+      "error": "缺少年份或月份列"
+    }
+  }
+}
